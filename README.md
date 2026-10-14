@@ -35,6 +35,7 @@ and export/import backups are not implemented yet.
 | Reader | Guide |
 | --- | --- |
 | Parents testing a prepared device | [Phone and touch guide](docs/PARENT-GUIDE.md) |
+| End users and families | [Printable user manual](output/pdf/dragon-den-user-manual.pdf) / [editable text](docs/USER-MANUAL.md) |
 | Developers setting up another computer | [Build and test](docs/DEVELOPMENT.md) |
 | Hardware assembly and power | [Hardware wiring](dragon-firmware/HARDWARE-WIRING.md) |
 | Profiles and custom dragons | [Collections and editing](dragon-firmware/PROFILES-AND-CREATIONS.md) |

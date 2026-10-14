@@ -83,6 +83,12 @@ card/credential capture. Parents should receive the card, not coding tools.
 
 ## Release checklist
 
+The printable manual is maintained in `docs/USER-MANUAL.md`. With Python's
+`reportlab` installed, regenerate it from the repository root using
+`python dragon-firmware/tools/build_user_manual.py`. The PDF is written to
+`output/pdf/dragon-den-user-manual.pdf`; render and visually inspect all six
+pages after editing it. It contains generic instructions, not device credentials.
+
 1. Pass regression suites, browser simulations and firmware build.
 2. Review generated headers for intentional source changes.
 3. Validate staged files: no `.tools`, credentials, build products or large
