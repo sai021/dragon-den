@@ -1,0 +1,18 @@
+"""Embed the editable, offline Dragon Den page in program flash."""
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+
+def generate():
+    page = (ROOT / 'web/dragon-den.html').read_text(encoding='utf-8')
+    page = page.replace('<script src="/library.js"></script>', '<script>\n' + (ROOT / 'web/library.js').read_text(encoding='utf-8') + '\n</script>')
+    if ')DRAGONWEB"' in page:
+        raise ValueError('Page contains the C++ raw-string delimiter')
+    output = '#pragma once\n// Generated from web/dragon-den.html by tools/embed_web.py.\n'
+    output += 'const char page[] PROGMEM=R"DRAGONWEB(' + page + ')DRAGONWEB";\n'
+    target = ROOT / 'DragonPrototype/DragonWebPage.h'
+    if not target.exists() or target.read_text(encoding='utf-8') != output:
+        target.write_text(output, encoding='utf-8')
+
+if __name__ == '__main__':
+    generate()

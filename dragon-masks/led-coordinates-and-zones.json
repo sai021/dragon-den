@@ -1,0 +1,524 @@
+{
+  "units": "mm",
+  "view": "front looking toward board; do not mirror individual layers",
+  "board_mm": [
+    65,
+    65
+  ],
+  "origin": "top left",
+  "note": "Photo-derived LED centres; 5 mm nominal package squares. Not a mechanical PCB drawing.",
+  "leds": [
+    {
+      "row": 1,
+      "column": 1,
+      "x_mm": 3.5912,
+      "y_mm": 3.1759,
+      "package_mm": 5,
+      "zone": "BG"
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "x_mm": 11.779,
+      "y_mm": 3.1759,
+      "package_mm": 5,
+      "zone": "LE"
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "x_mm": 19.9669,
+      "y_mm": 3.1759,
+      "package_mm": 5,
+      "zone": "LE"
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "x_mm": 28.0829,
+      "y_mm": 3.1759,
+      "package_mm": 5,
+      "zone": "BG"
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "x_mm": 36.3425,
+      "y_mm": 3.1759,
+      "package_mm": 5,
+      "zone": "BG"
+    },
+    {
+      "row": 1,
+      "column": 6,
+      "x_mm": 44.5304,
+      "y_mm": 3.1759,
+      "package_mm": 5,
+      "zone": "RE"
+    },
+    {
+      "row": 1,
+      "column": 7,
+      "x_mm": 52.7901,
+      "y_mm": 3.1759,
+      "package_mm": 5,
+      "zone": "RE"
+    },
+    {
+      "row": 1,
+      "column": 8,
+      "x_mm": 60.9779,
+      "y_mm": 3.1759,
+      "package_mm": 5,
+      "zone": "BG"
+    },
+    {
+      "row": 2,
+      "column": 1,
+      "x_mm": 3.5912,
+      "y_mm": 11.645,
+      "package_mm": 5,
+      "zone": "LE"
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "x_mm": 11.779,
+      "y_mm": 11.645,
+      "package_mm": 5,
+      "zone": "LW"
+    },
+    {
+      "row": 2,
+      "column": 3,
+      "x_mm": 19.9669,
+      "y_mm": 11.645,
+      "package_mm": 5,
+      "zone": "LH"
+    },
+    {
+      "row": 2,
+      "column": 4,
+      "x_mm": 28.0829,
+      "y_mm": 11.645,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 2,
+      "column": 5,
+      "x_mm": 36.3425,
+      "y_mm": 11.645,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 2,
+      "column": 6,
+      "x_mm": 44.5304,
+      "y_mm": 11.645,
+      "package_mm": 5,
+      "zone": "RH"
+    },
+    {
+      "row": 2,
+      "column": 7,
+      "x_mm": 52.7901,
+      "y_mm": 11.645,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 2,
+      "column": 8,
+      "x_mm": 60.9779,
+      "y_mm": 11.645,
+      "package_mm": 5,
+      "zone": "RE"
+    },
+    {
+      "row": 3,
+      "column": 1,
+      "x_mm": 3.5912,
+      "y_mm": 20.114,
+      "package_mm": 5,
+      "zone": "LE"
+    },
+    {
+      "row": 3,
+      "column": 2,
+      "x_mm": 11.779,
+      "y_mm": 20.114,
+      "package_mm": 5,
+      "zone": "LW"
+    },
+    {
+      "row": 3,
+      "column": 3,
+      "x_mm": 19.9669,
+      "y_mm": 20.114,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 3,
+      "column": 4,
+      "x_mm": 28.0829,
+      "y_mm": 20.114,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 3,
+      "column": 5,
+      "x_mm": 36.3425,
+      "y_mm": 20.114,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 3,
+      "column": 6,
+      "x_mm": 44.5304,
+      "y_mm": 20.114,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 3,
+      "column": 7,
+      "x_mm": 52.7901,
+      "y_mm": 20.114,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 3,
+      "column": 8,
+      "x_mm": 60.9779,
+      "y_mm": 20.114,
+      "package_mm": 5,
+      "zone": "RE"
+    },
+    {
+      "row": 4,
+      "column": 1,
+      "x_mm": 3.5912,
+      "y_mm": 28.6536,
+      "package_mm": 5,
+      "zone": "LW"
+    },
+    {
+      "row": 4,
+      "column": 2,
+      "x_mm": 11.779,
+      "y_mm": 28.6536,
+      "package_mm": 5,
+      "zone": "LW"
+    },
+    {
+      "row": 4,
+      "column": 3,
+      "x_mm": 19.9669,
+      "y_mm": 28.6536,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 4,
+      "column": 4,
+      "x_mm": 28.0829,
+      "y_mm": 28.6536,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 4,
+      "column": 5,
+      "x_mm": 36.3425,
+      "y_mm": 28.6536,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 4,
+      "column": 6,
+      "x_mm": 44.5304,
+      "y_mm": 28.6536,
+      "package_mm": 5,
+      "zone": "FA"
+    },
+    {
+      "row": 4,
+      "column": 7,
+      "x_mm": 52.7901,
+      "y_mm": 28.6536,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 4,
+      "column": 8,
+      "x_mm": 60.9779,
+      "y_mm": 28.6536,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 5,
+      "column": 1,
+      "x_mm": 3.5912,
+      "y_mm": 37.0521,
+      "package_mm": 5,
+      "zone": "LW"
+    },
+    {
+      "row": 5,
+      "column": 2,
+      "x_mm": 11.779,
+      "y_mm": 37.0521,
+      "package_mm": 5,
+      "zone": "LW"
+    },
+    {
+      "row": 5,
+      "column": 3,
+      "x_mm": 19.9669,
+      "y_mm": 37.0521,
+      "package_mm": 5,
+      "zone": "LW"
+    },
+    {
+      "row": 5,
+      "column": 4,
+      "x_mm": 28.0829,
+      "y_mm": 37.0521,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 5,
+      "column": 5,
+      "x_mm": 36.3425,
+      "y_mm": 37.0521,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 5,
+      "column": 6,
+      "x_mm": 44.5304,
+      "y_mm": 37.0521,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 5,
+      "column": 7,
+      "x_mm": 52.7901,
+      "y_mm": 37.0521,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 5,
+      "column": 8,
+      "x_mm": 60.9779,
+      "y_mm": 37.0521,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 6,
+      "column": 1,
+      "x_mm": 3.5912,
+      "y_mm": 45.5212,
+      "package_mm": 5,
+      "zone": "LW"
+    },
+    {
+      "row": 6,
+      "column": 2,
+      "x_mm": 11.779,
+      "y_mm": 45.5212,
+      "package_mm": 5,
+      "zone": "LW"
+    },
+    {
+      "row": 6,
+      "column": 3,
+      "x_mm": 19.9669,
+      "y_mm": 45.5212,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 6,
+      "column": 4,
+      "x_mm": 28.0829,
+      "y_mm": 45.5212,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 6,
+      "column": 5,
+      "x_mm": 36.3425,
+      "y_mm": 45.5212,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 6,
+      "column": 6,
+      "x_mm": 44.5304,
+      "y_mm": 45.5212,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 6,
+      "column": 7,
+      "x_mm": 52.7901,
+      "y_mm": 45.5212,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 6,
+      "column": 8,
+      "x_mm": 60.9779,
+      "y_mm": 45.5212,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 7,
+      "column": 1,
+      "x_mm": 3.5912,
+      "y_mm": 53.9197,
+      "package_mm": 5,
+      "zone": "BG"
+    },
+    {
+      "row": 7,
+      "column": 2,
+      "x_mm": 11.779,
+      "y_mm": 53.9197,
+      "package_mm": 5,
+      "zone": "TA"
+    },
+    {
+      "row": 7,
+      "column": 3,
+      "x_mm": 19.9669,
+      "y_mm": 53.9197,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 7,
+      "column": 4,
+      "x_mm": 28.0829,
+      "y_mm": 53.9197,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 7,
+      "column": 5,
+      "x_mm": 36.3425,
+      "y_mm": 53.9197,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 7,
+      "column": 6,
+      "x_mm": 44.5304,
+      "y_mm": 53.9197,
+      "package_mm": 5,
+      "zone": "BO"
+    },
+    {
+      "row": 7,
+      "column": 7,
+      "x_mm": 52.7901,
+      "y_mm": 53.9197,
+      "package_mm": 5,
+      "zone": "RW"
+    },
+    {
+      "row": 7,
+      "column": 8,
+      "x_mm": 60.9779,
+      "y_mm": 53.9197,
+      "package_mm": 5,
+      "zone": "BG"
+    },
+    {
+      "row": 8,
+      "column": 1,
+      "x_mm": 3.5912,
+      "y_mm": 62.2476,
+      "package_mm": 5,
+      "zone": "BG"
+    },
+    {
+      "row": 8,
+      "column": 2,
+      "x_mm": 11.779,
+      "y_mm": 62.2476,
+      "package_mm": 5,
+      "zone": "TA"
+    },
+    {
+      "row": 8,
+      "column": 3,
+      "x_mm": 19.9669,
+      "y_mm": 62.2476,
+      "package_mm": 5,
+      "zone": "TA"
+    },
+    {
+      "row": 8,
+      "column": 4,
+      "x_mm": 28.0829,
+      "y_mm": 62.2476,
+      "package_mm": 5,
+      "zone": "TA"
+    },
+    {
+      "row": 8,
+      "column": 5,
+      "x_mm": 36.3425,
+      "y_mm": 62.2476,
+      "package_mm": 5,
+      "zone": "TA"
+    },
+    {
+      "row": 8,
+      "column": 6,
+      "x_mm": 44.5304,
+      "y_mm": 62.2476,
+      "package_mm": 5,
+      "zone": "BG"
+    },
+    {
+      "row": 8,
+      "column": 7,
+      "x_mm": 52.7901,
+      "y_mm": 62.2476,
+      "package_mm": 5,
+      "zone": "BG"
+    },
+    {
+      "row": 8,
+      "column": 8,
+      "x_mm": 60.9779,
+      "y_mm": 62.2476,
+      "package_mm": 5,
+      "zone": "BG"
+    }
+  ]
+}

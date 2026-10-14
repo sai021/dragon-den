@@ -1,0 +1,32 @@
+# Local runtimes, device credentials, setup cards and test captures
+**/.tools/
+**/build/
+**/node_modules/
+**/__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+**/setup-credentials.json
+**/dragon-setup-card.html
+**/*installed-live.log
+**/*runtime-check.log
+
+# Reproducible, large optical outputs and duplicate delivery bundles
+dragon-light-guide-prototype/*.stl
+dragon-masks/light-guide/*.stl
+dragon-masks/light-guide/geometry-grid.npz
+*.zip
+
+# Local CAD/editor and test output
+*.exe
+*.pdb
+*.lib
+*.o
+*.bin
+*.elf
+*.bak
+*.kicad_prl
+**/*-backups/
+.DS_Store
+Thumbs.db

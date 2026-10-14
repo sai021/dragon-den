@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="920" viewBox="0 0 1400 920">
+  <style>
+    .bg{fill:#f8fafc}.box{fill:#fff;stroke:#1e293b;stroke-width:3}.title{font:700 27px Arial;fill:#0f172a}.head{font:700 21px Arial;fill:#0f172a}.txt{font:17px Arial;fill:#1e293b}.small{font:15px Arial;fill:#334155}.wire5{stroke:#dc2626;stroke-width:5;fill:none}.wire3{stroke:#f59e0b;stroke-width:4;fill:none}.sig{stroke:#2563eb;stroke-width:4;fill:none}.gnd{stroke:#111827;stroke-width:4;fill:none}.node{fill:#111827}.warn{fill:#fff7ed;stroke:#ea580c;stroke-width:3}.adc{fill:#eff6ff;stroke:#2563eb;stroke-width:3}
+  </style>
+  <rect class="bg" width="1400" height="920"/>
+  <text x="700" y="42" text-anchor="middle" class="title">Dragon Lamp — ESP32-S3 Wiring</text>
+  <rect x="45" y="75" width="330" height="165" rx="16" class="warn"/>
+  <text x="210" y="108" text-anchor="middle" class="head">Power source</text>
+  <text x="70" y="142" class="txt">A. PC USB-C → ESP32 USB</text>
+  <text x="70" y="173" class="txt">B. USB-C breakout → 5V/GND</text>
+  <text x="70" y="207" class="small">Use one 5 V source at a time</text>
+  <rect x="490" y="75" width="380" height="210" rx="16" class="box"/>
+  <text x="680" y="108" text-anchor="middle" class="head">ESP32-S3 SuperMini</text>
+  <text x="525" y="145" class="txt">GPIO12  → matrix DIN</text>
+  <text x="525" y="178" class="txt">GPIO11  ← TTP223 OUT</text>
+  <text x="525" y="211" class="txt">GPIO9    ← LDR junction</text>
+  <text x="525" y="244" class="txt">GPIO10  ← voltage junction</text>
+  <path d="M375 155 H490" class="wire5"/><text x="403" y="145" class="small">5V/VBUS</text>
+  <path d="M375 215 H465 V270 H490" class="gnd"/><text x="402" y="233" class="small">GND</text>
+  <rect x="1010" y="75" width="330" height="210" rx="16" class="box"/>
+  <text x="1175" y="108" text-anchor="middle" class="head">8×8 WS2812B matrix</text>
+  <text x="1045" y="150" class="txt">+5V</text><text x="1045" y="188" class="txt">GND</text><text x="1045" y="226" class="txt">DIN</text>
+  <path d="M870 130 H1010" class="wire5"/>
+  <path d="M870 185 H1010" class="gnd"/>
+  <path d="M870 225 H930" class="sig"/><rect x="930" y="211" width="66" height="28" class="box"/><text x="963" y="231" text-anchor="middle" class="small">330–470Ω</text><path d="M996 225 H1010" class="sig"/>
+  <path d="M1140 285 V330 H1210 V285" class="wire5"/><text x="1175" y="355" text-anchor="middle" class="small">1000µF bulk capacitor (+ to 5V)</text>
+
+  <rect x="45" y="370" width="400" height="230" rx="16" class="adc"/>
+  <text x="245" y="405" text-anchor="middle" class="head">5 V voltage divider → GPIO10</text>
+  <text x="75" y="448" class="txt">+5V ── 100k ──●── GPIO10</text>
+  <text x="245" y="486" text-anchor="middle" class="txt">│</text>
+  <text x="245" y="520" text-anchor="middle" class="txt">20k  ∥  100nF</text>
+  <text x="245" y="555" text-anchor="middle" class="txt">│</text>
+  <text x="245" y="583" text-anchor="middle" class="txt">GND</text>
+  <path d="M445 465 H490" class="sig"/>
+
+  <rect x="500" y="370" width="350" height="230" rx="16" class="adc"/>
+  <text x="675" y="405" text-anchor="middle" class="head">LDR divider → GPIO9</text>
+  <text x="540" y="448" class="txt">3.3V ── LDR ──●── GPIO9</text>
+  <text x="675" y="486" text-anchor="middle" class="txt">│</text>
+  <text x="675" y="520" text-anchor="middle" class="txt">10k  ∥  100nF recommended</text>
+  <text x="675" y="555" text-anchor="middle" class="txt">│</text>
+  <text x="675" y="583" text-anchor="middle" class="txt">GND</text>
+
+  <rect x="905" y="370" width="435" height="230" rx="16" class="box"/>
+  <text x="1122" y="405" text-anchor="middle" class="head">TTP223 touch → GPIO11</text>
+  <text x="955" y="456" class="txt">VCC  ← ESP32 3.3V</text>
+  <text x="955" y="500" class="txt">GND  → common GND</text>
+  <text x="955" y="544" class="txt">OUT  → GPIO11</text>
+  <text x="955" y="579" class="small">Keep LDR wires away from touch pad</text>
+
+  <rect x="45" y="665" width="1295" height="195" rx="16" class="warn"/>
+  <text x="70" y="706" class="head">Verified checks</text>
+  <text x="70" y="746" class="txt">• GPIO9 and GPIO10 are ADC1_CH8 and ADC1_CH9. Add 100 nF from each ADC input to GND for best accuracy.</text>
+  <text x="70" y="783" class="txt">• At 5.00 V, the 100k/20k junction must be ≈0.833 V. The 100k resistor must be on the +5 V side.</text>
+  <text x="70" y="820" class="txt">• All grounds are common. Power the TTP223 and LDR from 3.3 V, never from the matrix 5 V rail.</text>
+  <text x="70" y="852" class="small">The INMP441 microphone is not connected or used.</text>
+</svg>

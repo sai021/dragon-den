@@ -1,0 +1,66 @@
+{
+  "air_components_to_z11p8": 12,
+  "rear_to_front_connections": {
+    "BG": [
+      {
+        "zone": "BG",
+        "reachable_area_mm2": 1325.74
+      }
+    ],
+    "LE": [
+      {
+        "zone": "LE",
+        "reachable_area_mm2": 56.27
+      }
+    ],
+    "RE": [
+      {
+        "zone": "RE",
+        "reachable_area_mm2": 59.16
+      }
+    ],
+    "LW": [
+      {
+        "zone": "LW",
+        "reachable_area_mm2": 660.47
+      }
+    ],
+    "RW": [
+      {
+        "zone": "RW",
+        "reachable_area_mm2": 661.6
+      }
+    ],
+    "LH": [
+      {
+        "zone": "LH",
+        "reachable_area_mm2": 22.5
+      }
+    ],
+    "RH": [
+      {
+        "zone": "RH",
+        "reachable_area_mm2": 22.51
+      }
+    ],
+    "FA": [
+      {
+        "zone": "FA",
+        "reachable_area_mm2": 427.82
+      }
+    ],
+    "BO": [
+      {
+        "zone": "BO",
+        "reachable_area_mm2": 372.12
+      }
+    ],
+    "TA": [
+      {
+        "zone": "TA",
+        "reachable_area_mm2": 83.67
+      }
+    ]
+  },
+  "no_cross_zone_air_connections": true
+}

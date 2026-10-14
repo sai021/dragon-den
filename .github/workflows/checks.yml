@@ -1,0 +1,43 @@
+name: Firmware and interface checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  regressions:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dragon-firmware
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Tk/display dependencies
+        run: sudo apt-get update && sudo apt-get install -y python3-tk xvfb
+      - name: Python and native firmware tests
+        run: xvfb-run -a python tools/run_tests.py --cxx g++
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser test tools
+        run: npm install && npx playwright install --with-deps chromium
+      - name: Simulated phone checks
+        run: npm run test:web
+  firmware:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: dragon-firmware
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: arduino/setup-arduino-cli@v2
+      - name: Install pinned firmware libraries
+        run: python tools/dev.py setup
+      - name: Build firmware and enforce partition size
+        run: python tools/dev.py build

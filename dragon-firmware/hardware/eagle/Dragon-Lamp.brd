@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.6.2">
+  <drawing>
+    <settings>
+      <setting alwaysvectorfont="no" />
+      <setting verticaltext="up" />
+    </settings>
+    <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch" />
+    <layers>
+      <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes" />
+      <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes" />
+      <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes" />
+      <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes" />
+      <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="29" name="tStop" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="30" name="bStop" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes" />
+      <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes" />
+      <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes" />
+      <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes" />
+      <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes" />
+      <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes" />
+    </layers>
+    <board>
+      <plain />
+      <libraries>
+        <library name="Dragon_KiCad_Official">
+          <packages>
+            <package name="R_VERTICAL_P2.54">
+              <description>Provisional through-hole footprint: verify actual component dimensions. Header pin order is the schematic harness order.</description>
+              <circle x="-1.27" y="0" radius="1.25" width="0.15" layer="21" />
+              <pad name="1" x="-1.27" y="0" drill="0.9" diameter="1.8" shape="square" />
+              <pad name="2" x="1.27" y="0" drill="0.9" diameter="1.8" shape="round" />
+              <text x="-2" y="6" size="1.27" layer="25">&gt;NAME</text>
+              <text x="-2" y="-7" size="1.27" layer="27">&gt;VALUE</text>
+            </package>
+            <package name="C_DISC_P5.00">
+              <description>Provisional through-hole footprint: verify actual component dimensions. Header pin order is the schematic harness order.</description>
+              <wire x1="-2.5" y1="-1.25" x2="2.5" y2="-1.25" width="0.15" layer="21" />
+              <wire x1="2.5" y1="-1.25" x2="2.5" y2="1.25" width="0.15" layer="21" />
+              <wire x1="2.5" y1="1.25" x2="-2.5" y2="1.25" width="0.15" layer="21" />
+              <wire x1="-2.5" y1="1.25" x2="-2.5" y2="-1.25" width="0.15" layer="21" />
+              <pad name="1" x="-2.5" y="0" drill="0.9" diameter="1.8" shape="square" />
+              <pad name="2" x="2.5" y="0" drill="0.9" diameter="1.8" shape="round" />
+              <text x="-2" y="6" size="1.27" layer="25">&gt;NAME</text>
+              <text x="-2" y="-7" size="1.27" layer="27">&gt;VALUE</text>
+            </package>
+            <package name="HEADER_1X2_P2.54">
+              <description>Provisional through-hole footprint: verify actual component dimensions. Header pin order is the schematic harness order.</description>
+              <wire x1="-1.27" y1="-1.27" x2="3.81" y2="-1.27" width="0.15" layer="21" />
+              <wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.15" layer="21" />
+              <wire x1="3.81" y1="1.27" x2="-1.27" y2="1.27" width="0.15" layer="21" />
+              <wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.15" layer="21" />
+              <pad name="1" x="0.0" y="0" drill="1" diameter="1.8" shape="square" />
+              <pad name="2" x="2.54" y="0" drill="1" diameter="1.8" shape="round" />
+              <text x="-2" y="6" size="1.27" layer="25">&gt;NAME</text>
+              <text x="-2" y="-7" size="1.27" layer="27">&gt;VALUE</text>
+            </package>
+            <package name="HEADER_1X3_P2.54">
+              <description>Provisional through-hole footprint: verify actual component dimensions. Header pin order is the schematic harness order.</description>
+              <wire x1="-1.27" y1="-1.27" x2="6.35" y2="-1.27" width="0.15" layer="21" />
+              <wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.15" layer="21" />
+              <wire x1="6.35" y1="1.27" x2="-1.27" y2="1.27" width="0.15" layer="21" />
+              <wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.15" layer="21" />
+              <pad name="1" x="0.0" y="0" drill="1" diameter="1.8" shape="square" />
+              <pad name="2" x="2.54" y="0" drill="1" diameter="1.8" shape="round" />
+              <pad name="3" x="5.08" y="0" drill="1" diameter="1.8" shape="round" />
+              <text x="-2" y="6" size="1.27" layer="25">&gt;NAME</text>
+              <text x="-2" y="-7" size="1.27" layer="27">&gt;VALUE</text>
+            </package>
+            <package name="HEADER_1X8_P2.54">
+              <description>Provisional through-hole footprint: verify actual component dimensions. Header pin order is the schematic harness order.</description>
+              <wire x1="-1.27" y1="-1.27" x2="19.05" y2="-1.27" width="0.15" layer="21" />
+              <wire x1="19.05" y1="-1.27" x2="19.05" y2="1.27" width="0.15" layer="21" />
+              <wire x1="19.05" y1="1.27" x2="-1.27" y2="1.27" width="0.15" layer="21" />
+              <wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.15" layer="21" />
+              <pad name="1" x="0.0" y="0" drill="1" diameter="1.8" shape="square" />
+              <pad name="2" x="2.54" y="0" drill="1" diameter="1.8" shape="round" />
+              <pad name="3" x="5.08" y="0" drill="1" diameter="1.8" shape="round" />
+              <pad name="4" x="7.62" y="0" drill="1" diameter="1.8" shape="round" />
+              <pad name="5" x="10.16" y="0" drill="1" diameter="1.8" shape="round" />
+              <pad name="6" x="12.7" y="0" drill="1" diameter="1.8" shape="round" />
+              <pad name="7" x="15.24" y="0" drill="1" diameter="1.8" shape="round" />
+              <pad name="8" x="17.78" y="0" drill="1" diameter="1.8" shape="round" />
+              <text x="-2" y="6" size="1.27" layer="25">&gt;NAME</text>
+              <text x="-2" y="-7" size="1.27" layer="27">&gt;VALUE</text>
+            </package>
+          </packages>
+        </library>
+      </libraries>
+      <attributes />
+      <variantdefs />
+      <classes>
+        <class number="0" name="default" width="0" drill="0">
+          <clearance class="0" value="0.254" />
+        </class>
+      </classes>
+      <designrules name="default" />
+      <elements>
+        <element name="J1" library="Dragon_KiCad_Official" package="HEADER_1X8_P2.54" value="ESP32 1x8 socket" x="0" y="0" rot="R0" />
+        <element name="J2" library="Dragon_KiCad_Official" package="HEADER_1X3_P2.54" value="Matrix input" x="30" y="0" rot="R0" />
+        <element name="J3" library="Dragon_KiCad_Official" package="HEADER_1X3_P2.54" value="TTP223 module" x="60" y="0" rot="R0" />
+        <element name="J4" library="Dragon_KiCad_Official" package="HEADER_1X2_P2.54" value="USB-C breakout 5V" x="0" y="20" rot="R0" />
+        <element name="R1" library="Dragon_KiCad_Official" package="R_VERTICAL_P2.54" value="330R" x="30" y="20" rot="R0" />
+        <element name="C2" library="Dragon_KiCad_Official" package="C_DISC_P5.00" value="100nF" x="60" y="20" rot="R0" />
+        <element name="J5" library="Dragon_KiCad_Official" package="HEADER_1X2_P2.54" value="Off-board LDR" x="0" y="40" rot="R0" />
+        <element name="R3" library="Dragon_KiCad_Official" package="R_VERTICAL_P2.54" value="10k" x="30" y="40" rot="R0" />
+        <element name="C3" library="Dragon_KiCad_Official" package="C_DISC_P5.00" value="100nF optional" x="60" y="40" rot="R0" />
+        <element name="R4" library="Dragon_KiCad_Official" package="R_VERTICAL_P2.54" value="100k / 1%" x="0" y="60" rot="R0" />
+        <element name="R5" library="Dragon_KiCad_Official" package="R_VERTICAL_P2.54" value="20k / 1%" x="30" y="60" rot="R0" />
+        <element name="C4" library="Dragon_KiCad_Official" package="C_DISC_P5.00" value="100nF" x="60" y="60" rot="R0" />
+      </elements>
+      <signals>
+        <signal name="+3V3">
+          <contactref element="J1" pad="3" />
+          <contactref element="J3" pad="1" />
+          <contactref element="C2" pad="1" />
+          <contactref element="J5" pad="1" />
+        </signal>
+        <signal name="+5V">
+          <contactref element="J1" pad="1" />
+          <contactref element="J4" pad="1" />
+          <contactref element="J2" pad="1" />
+          <contactref element="R4" pad="1" />
+        </signal>
+        <signal name="GND">
+          <contactref element="J1" pad="2" />
+          <contactref element="J4" pad="2" />
+          <contactref element="J2" pad="2" />
+          <contactref element="J3" pad="2" />
+          <contactref element="C2" pad="2" />
+          <contactref element="R3" pad="2" />
+          <contactref element="C3" pad="2" />
+          <contactref element="R5" pad="2" />
+          <contactref element="C4" pad="2" />
+        </signal>
+        <signal name="GPIO10_VSENSE">
+          <contactref element="J1" pad="7" />
+          <contactref element="R4" pad="2" />
+          <contactref element="R5" pad="1" />
+          <contactref element="C4" pad="1" />
+        </signal>
+        <signal name="GPIO11_TOUCH">
+          <contactref element="J1" pad="6" />
+          <contactref element="J3" pad="3" />
+        </signal>
+        <signal name="GPIO12_LED">
+          <contactref element="J1" pad="5" />
+          <contactref element="R1" pad="2" />
+        </signal>
+        <signal name="GPIO9_LDR">
+          <contactref element="J1" pad="8" />
+          <contactref element="J5" pad="2" />
+          <contactref element="R3" pad="1" />
+          <contactref element="C3" pad="1" />
+        </signal>
+        <signal name="LED_DIN">
+          <contactref element="R1" pad="1" />
+          <contactref element="J2" pad="3" />
+        </signal>
+      </signals>
+      <errors />
+    </board>
+  </drawing>
+</eagle>

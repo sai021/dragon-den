@@ -1,0 +1,82 @@
+{
+  "status": "prototype; unmeasured PCB components and optical performance require physical checks",
+  "pitch_mm": 0.1,
+  "bounds_mm": [
+    [
+      -1.25,
+      -1.1500015258789062,
+      0.0
+    ],
+    [
+      66.1500015258789,
+      66.25,
+      13.699999995529652
+    ]
+  ],
+  "faces": 5347814,
+  "watertight": true,
+  "winding_consistent": true,
+  "connected_solid_components": 1,
+  "volume_mm3": 10096.12985251483,
+  "minimum_nominal_LED_package_to_rear_wall_mm": 1.0,
+  "front_air_reachability_from_rear_in_voxel_model": {
+    "BG": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    },
+    "LE": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    },
+    "RE": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    },
+    "LW": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    },
+    "RW": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    },
+    "LH": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    },
+    "RH": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    },
+    "FA": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    },
+    "BO": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    },
+    "TA": {
+      "reachable_fraction": 1.0,
+      "unreachable_area_mm2": 0.0
+    }
+  },
+  "minimum_air_section_mm2": {
+    "BG": 521.2100000000002,
+    "LE": 54.19000000000001,
+    "RE": 58.58000000000001,
+    "LW": 546.0500000000001,
+    "RW": 615.9400000000002,
+    "LH": 22.500000000000004,
+    "RH": 22.510000000000005,
+    "FA": 427.8200000000001,
+    "BO": 372.12000000000006,
+    "TA": 83.67000000000002
+  },
+  "gap_definition": "PCB contact plane z=0; nominal visible face z=14; rear surface z=14-thickness; 0.1mm mesh sampling",
+  "limits": [
+    "No measured component reliefs, mounting features, or PCB clearance allowance.",
+    "Zone connectivity is a flood-fill check, not ray tracing or measured light output.",
+    "Interior walls are raster-derived; sharp transitions at endpoint collars need slicer review."
+  ]
+}
